@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
-    <title>9tailfox</title>
+    <title>9tailcat</title>
     <meta name="description" content="">
     <meta name="author" content="">
     
@@ -98,7 +98,7 @@
 				<div class="contained">
 					
 					<!-- theme name -->
-					<h1> 9tailfox <span class="hidden-phone">- Smart Retail Management</span> </h1>
+					<h1> <a href="./"><img src="img/9tailcat_trans_white.png" width="100px"></a> </h1>
 					<!-- end theme name -->
 					
 					<!-- span4 -->
@@ -216,29 +216,6 @@
 							</div>
 							<!-- end Tasks -->
 							
-							<!-- theme dropdown -->
-							<div class="btn-group hidden-phone">
-								<a href="javascript:void(0)" class="btn btn-small btn-inverse" id="reset-widget"><i class="icon-refresh"></i></a>
-								<a href="javascript:void(0)" class="btn btn-small btn-inverse dropdown-toggle" data-toggle="dropdown">Themes <span class="caret"></span></a>
-								<ul id="theme-links-js" class="dropdown-menu toolbar pull-right">
-									<li>
-										<a href="javascript:void(0)" data-rel="purple"><i class="icon-sign-blank purple-icon"></i>Royal Purple</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-rel="blue"><i class="icon-sign-blank navyblue-icon"></i>Navy Blue</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-rel="green"><i class="icon-sign-blank green-icon "></i>Emerald</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-rel="darkred"><i class="icon-sign-blank red-icon "></i>Dark Rose</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-rel="default"><i class="icon-sign-blank grey-icon"></i>Default</a>
-									</li>
-								</ul>
-							</div>
-							<!-- end theme dropdown-->
 							
 						</div>
 					  	<!-- end demo theme switcher-->
@@ -256,21 +233,13 @@
 			<div class="contained">
 				<!-- aside -->	
 				<aside>	
-					
-					<!-- search box -->
-					<div class="main-search">
-						<label for="main-search"><i class="icon-search"></i></label>
-	                    <input id="main-search" type="text" placeholder="Search..." />
-                	</div>
-					<div class="divider"></div>
-					<!-- end search box -->
 										
 					<!-- aside item: Mini profile -->
 					<div class="my-profile">
 						<a href="javascript:void(0)" class="my-profile-pic">
 							<img src="img/avatar/avatar_0.jpg" alt="" />
 						</a>
-						<span class="first-child">Welcome <strong>Victoria!</strong></span>
+						<span class="first-child"><a style="color:#888;"> Siti Aminah</a></span>
 						<span><a href="javascript:void(0);">Edit Profile </a></span>
 					</div>
 					<div class="divider"></div>
@@ -280,11 +249,11 @@
 					<div class="sidebar-nav-fixed">
 						
 						<ul class="menu" id="accordion-menu-js">
-							<li class="current">
+							<li class="">
 								<a href="javascript:void(0)"><i class="icon-off"></i>Dashboard <span class="badge">2</span></a>
 								<ul>
 									<li>
-										<a href="index.html" class="expanded">Dashboard</a>
+										<a href="index.html" >Dashboard</a>
 									</li>
 									<li>
 										<a href="javascript:void(0);" class="logout-js" data-rel="login.html">Logout</a>
@@ -297,14 +266,14 @@
 							<li class="">
 								<a href="item.html"><i class="icon-user"></i>Item / Produk</a>
 							</li>
-							<li class="">
+							<li class="current">
 								<a href="javascript:void(0)"><i class="icon-user"></i>Akun<span class="badge">2</span></a>
 								<ul>
 									<li>
-										<a href="#">POS / Kasir</a>
+										<a href="#" class="expanded">POS / Kasir</a>
 									</li>
 									<li>
-										<a href="#">Admin</a>
+										<a href="uadmin.html">Admin</a>
 									</li>
 								</ul>
 							</li>
@@ -313,16 +282,16 @@
 								<a href="javascript:void(0)"><i class="icon-check"></i>Laporan<span class="badge">4</span></a>
 								<ul>
 									<li>
-										<a href="#">Penjualan</a>
+										<a href="rsell.html">Penjualan</a>
 									</li>
 									<li>
-										<a href="#">Pembelian</a>
+										<a href="rbuy.html">Pembelian</a>
 									</li>
 									<li>
-										<a href="#">Kas</a>
+										<a href="rkas.html">Kas</a>
 									</li>
 									<li>
-										<a href="#">Karyawan</a>
+										<a href="rperform.html">Karyawan</a>
 									</li>
 								</ul>
 							</li>
@@ -348,10 +317,7 @@
 
 					<!-- aside buttons -->
 					<div class="aside-buttons">
-		                <a href="javascript:void(0);" title="" class="btn btn-info">Add new table</a>
-		                <a href="javascript:void(0);" title="" class="btn btn-success">Add a new row</a>
-		                <a href="javascript:void(0);" title="" class="btn btn-warning">Update table</a>
-		                <a href="javascript:void(0);" title="" class="btn btn-danger">Delete Table</a>
+		                <a href="javascript:void(0);" title="" class="btn btn-info">Tambah Kasir</a>
 		            </div>
 		            <div class="divider"></div>
 		            <!-- end aside buttons -->
@@ -389,6 +355,8 @@
 															<th>Nama</th>
 															<th>Lokasi</th>
 															<th width="10px">Status</th>
+															<th width="20px">Shift</th>
+															<th width="60px">Durasi Kerja</th>
 															<th width="80px">&nbsp;</th>
 														</tr>
 													</thead>
@@ -398,38 +366,47 @@
 															<td>ABC01</td>
 															<td>Yoso Adi</td>
 															<td>STT 1</td>
-															<td><i class="cus-connect"></i></td>
-															<td><a class="btn btn-mini"><i class="icon-th-list"></i></a> 
+															<td style="text-align:center"><i class="cus-connect"></i></td>
+															<td style="text-align:center">1</td>
+															<td style="text-align:center">28:35</td>
+															<td style="text-align:center">
+																<a class="btn btn-mini"><i class="icon-th-list"></i></a> 
 																<a class="btn btn-primary btn-mini"><i class="icon-edit"></i></a> 
 																<a class="btn btn-danger btn-mini"><i class="icon-trash"></i></a></td>
 														</tr>
 														<tr class="even gradeC">
 															<td>2</td>
-															<td>ABC01</td>
-															<td>Yoso Adi</td>
+															<td>ABC02</td>
+															<td>Hilman Ibnu</td>
 															<td>STT 1</td>
-															<td><i class="cus-connect"></i></td>
-															<td><a class="btn btn-mini"><i class="icon-th-list"></i></a> 
+															<td style="text-align:center"><i class="cus-connect"></i></td>
+															<td style="text-align:center">2</td>
+															<td style="text-align:center">23:31</td>
+															<td style="text-align:center"><a class="btn btn-mini"><i class="icon-th-list"></i></a> 
 																<a class="btn btn-primary btn-mini"><i class="icon-edit"></i></a> 
 																<a class="btn btn-danger btn-mini"><i class="icon-trash"></i></a></td>
 														</tr>
 														<tr class="odd gradeA">
 															<td>3</td>
-															<td>ABC01</td>
-															<td>Yoso Adi</td>
+															<td>ABC03</td>
+															<td>Anton</td>
 															<td>STT 1</td>
-															<td><i class="cus-disconnect"></i></td>
-															<td><a class="btn btn-mini"><i class="icon-th-list"></i></a> 
+															<td style="text-align:center"><i class="cus-disconnect"></i></td>
+															<td style="text-align:center">1</td>
+															<td style="text-align:center">32:55</td>
+															<td style="text-align:center"><a class="btn btn-mini"><i class="icon-th-list"></i></a> 
 																<a class="btn btn-primary btn-mini"><i class="icon-edit"></i></a> 
 																<a class="btn btn-danger btn-mini"><i class="icon-trash"></i></a></td>
 														</tr>
 														<tr class="even gradeA">
 															<td>4</td>
-															<td>ABC01</td>
-															<td>Yoso Adi</td>
+															<td>ABC04</td>
+															<td>Fitriani</td>
 															<td>STT 1</td>
-															<td><i class="cus-connect"></i></td>
-															<td><a class="btn btn-mini"><i class="icon-th-list"></i></a> 
+															<td style="text-align:center"><i class="cus-connect"></i></td>
+															<td style="text-align:center">2</td>
+															<td style="text-align:center">19:19</td>
+															<td style="text-align:center"><a class="btn btn-mini"><i class="icon-th-list"></i></a> 
 																<a class="btn btn-primary btn-mini"><i class="icon-edit"></i></a> 
 																<a class="btn btn-danger btn-mini"><i class="icon-trash"></i></a></td>
 														</tr>
@@ -460,20 +437,12 @@
 					<!-- sparkline stats -->
 					<ul class="mystats indented">
 		                <li class="first">
-		                    <h1><span>My Balance:</span>$17,349</h1>
-		                    <div class="mychart" id="balance" style="width:35px"></div>
+		                    <h1><span style="color:#555">Gaji Karyawan Total:</span>Rp 6.300.000,00</h1>
+		                    <div class="mychart"></div>
 		                </li>
 		                <li>
-		                    <h1><span>Impressions:</span>145k+</h1>
-		                    <div class="mychart" id="clicks" style="width:35px"></div>
-		                </li>
-		                <li>
-		                    <h1><span>Subscribers:</span>1,120</h1>
-		                    <div class="mychart" id="subscribe" style="width:35px"></div>
-		                </li>
-		                <li class="last">
-		                    <h1><span>Support Ticket:</span>945+</h1>
-		                    <div class="mychart" id="support" style="width:35px"></div>
+		                    <h1><span style="color:#555">Kas:</span>Rp 34.561.700</h1>
+		                    <div class="mychart" ></div>
 		                </li>
 		            </ul>
 		            <div class="divider"></div>
@@ -489,9 +458,9 @@
 							
 							<a href="javascript:void(0)">
 								<img src="img/email-important.png" width="22" height="18" alt="important mail" />
-								From:David S...
+								Yoso Adi
 							</a>
-							Dear Victoria, Congratulations! You work has been uploade...
+							Terlambat masuk kerja selama 24 Menit
 						</div>
 						<!-- inbox message 2-->
 						<div class="alert inbox">
@@ -500,9 +469,9 @@
 							</button>
 							<a href="javascript:void(0)">
 								<img src="img/email-unread.png" width="22" height="18" alt="important mail" />
-								Re:Last Year...
+								Yoso Adi
 							</a>
-							Hey Vicky, find attached! Thx :-)
+							Izin tidak masuk pada hari Kamis...
 						</div>
 						<!-- inbox message 3-->
 						<div class="alert inbox last-child">
@@ -511,32 +480,16 @@
 							</button>
 							<a href="javascript:void(0)">
 								<img src="img/email-unread.png" width="22" height="18" alt="important mail" />
-								Company Party
+								Anton
 							</a>
-							Hi, You have been cordially invited to join new year...
+							Izin tidak masuk pada hari Selasa...
 						</div>
 						
 					</div>
 					<div class="divider"></div>
 					<!-- end aside item: Inbox -->
 					
-					<!-- aside item: Tiny Stats -->
-					<div class="number-stats">
-				    	<ul>
-				        	<li>4579<span>visitors</span></li>
-				            <li>571<span>orders</span></li>
-				            <li>879<span>reviews</span></li>
-				        </ul>
-				    </div>
-				    <div class="divider"></div>
-					<!-- end aside item: Tiny Stats -->
 					
-					<!-- aside buttons -->
-					<div class="aside-buttons">
-		                <a href="javascript:void(0)" title="" class="btn btn-primary">Create an Invoice</a>
-		            </div>
-		            <div class="divider"></div>
-		            <!-- end aside buttons -->
 		            
 				</aside>
 				

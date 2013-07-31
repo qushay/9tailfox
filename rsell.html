@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
-    <title>9tailfox</title>
+    <title>9tailcat</title>
     <meta name="description" content="">
     <meta name="author" content="">
     
@@ -83,7 +83,28 @@
 	<link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
 	<link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
 	<link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)">
-	
+	<style type="text/css">
+		.perusahaan{
+			font-weight: bold;
+			font-size: 20px;	
+			border: none;
+		}
+		.laporan{
+			font-weight: bold;
+			font-size: 15px;	
+			border: none;
+		}
+		.periode{
+			font-weight: bold;
+			font-size: 11px;	
+			border: none;
+		}
+		.button_print{
+			padding-top: 2px;
+			padding-bottom: 2px;
+			background-color: #F5F5F5;
+		}
+	</style>
   </head>
 
   <body>
@@ -98,8 +119,7 @@
 				<div class="contained">
 					
 					<!-- theme name -->
-					<h1> 9tailfox <span class="hidden-phone">- Smart Retail Management</span> </h1>
-					<!-- end theme name -->
+					<h1>  <img src="img/9tailcat_trans_white.png" width="100px"> </h1>
 					
 					<!-- span4 -->
 					<div class="pull-right">
@@ -184,7 +204,7 @@
 							
 							<!-- Tasks -->
 							<div class="btn-group hidden-phone">
-								<a href="javascript:void(0)" class="btn btn-inverse btn-small">My Tasks</a>
+								<a href="javascript:void(0)" class="btn btn-inverse btn-small">Tugas</a>
 								<a href="javascript:void(0)" class="btn btn-inverse dropdown-toggle btn-small" data-toggle="dropdown"><span class="caret"></span></a>
 					
 								<div class="dropdown-menu toolbar pull-right">
@@ -215,31 +235,7 @@
 
 							</div>
 							<!-- end Tasks -->
-							
-							<!-- theme dropdown -->
-							<div class="btn-group hidden-phone">
-								<a href="javascript:void(0)" class="btn btn-small btn-inverse" id="reset-widget"><i class="icon-refresh"></i></a>
-								<a href="javascript:void(0)" class="btn btn-small btn-inverse dropdown-toggle" data-toggle="dropdown">Themes <span class="caret"></span></a>
-								<ul id="theme-links-js" class="dropdown-menu toolbar pull-right">
-									<li>
-										<a href="javascript:void(0)" data-rel="purple"><i class="icon-sign-blank purple-icon"></i>Royal Purple</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-rel="blue"><i class="icon-sign-blank navyblue-icon"></i>Navy Blue</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-rel="green"><i class="icon-sign-blank green-icon "></i>Emerald</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-rel="darkred"><i class="icon-sign-blank red-icon "></i>Dark Rose</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-rel="default"><i class="icon-sign-blank grey-icon"></i>Default</a>
-									</li>
-								</ul>
-							</div>
-							<!-- end theme dropdown-->
-							
+														
 						</div>
 					  	<!-- end demo theme switcher-->
 					</div>
@@ -257,13 +253,6 @@
 				<!-- aside -->	
 				<aside>	
 					
-					<!-- search box -->
-					<div class="main-search">
-						<label for="main-search"><i class="icon-search"></i></label>
-	                    <input id="main-search" type="text" placeholder="Search..." />
-                	</div>
-					<div class="divider"></div>
-					<!-- end search box -->
 										
 					<!-- aside item: Mini profile -->
 					<div class="my-profile">
@@ -280,11 +269,11 @@
 					<div class="sidebar-nav-fixed">
 						
 						<ul class="menu" id="accordion-menu-js">
-							<li class="current">
+							<li class="">
 								<a href="javascript:void(0)"><i class="icon-off"></i>Dashboard <span class="badge">2</span></a>
 								<ul>
 									<li>
-										<a href="index.html" class="expanded">Dashboard</a>
+										<a href="index.html" >Dashboard</a>
 									</li>
 									<li>
 										<a href="javascript:void(0);" class="logout-js" data-rel="login.html">Logout</a>
@@ -309,14 +298,14 @@
 								</ul>
 							</li>
 
-							<li class="">
+							<li class="current">
 								<a href="javascript:void(0)"><i class="icon-check"></i>Laporan<span class="badge">4</span></a>
 								<ul>
 									<li>
-										<a href="#">Penjualan</a>
+										<a href="rsell.html" class="expanded">Penjualan</a>
 									</li>
 									<li>
-										<a href="#">Pembelian</a>
+										<a href="rbuy.html">Pembelian</a>
 									</li>
 									<li>
 										<a href="#">Kas</a>
@@ -347,25 +336,26 @@
 					
 
 					<!-- aside buttons -->
-						<p class="help-block" style="color:white;margin-left:20px;">
-							Tanggal
-						</p>
-						<div class="input-append date" id="datepicker-js-2" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-							<input class="datepicker-input" size="16" type="text" value="12-02-2012" readonly="" />
+						<ul class="mystats indented">
+						Dari :
+		                <div class="input-append date" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+							<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
 							<span class="add-on"><i class="cus-calendar-2"></i></span>
 						</div>
-						<p class="help-block" style="color:white;margin-left:20px;">
-							Jam
-						</p>
-						<div class="input-append bootstrap-timepicker-component">
-			            <input id="timepicker1" type="text" class="timepicker-input" value="05:30 PM" />
-			            <span class="add-on"><i class="cus-clock"></i></span>
-			            <p class="help-block" style="color:white;margin-left:100px;">
-							Hingga
-						</p>
-						<div class="input-append bootstrap-timepicker-component">
-			            <input id="timepicker1" type="text" class="timepicker-input" value="05:30 PM" />
-			            <span class="add-on"><i class="cus-clock"></i></span>
+						Sampai :
+						<div class="input-append date" id="datepicker-js" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+							<input class="datepicker-input" size="16" type="text" value="12-02-2012" placeholder="Select a date" />
+							<span class="add-on"><i class="cus-calendar-2"></i></span>
+						</div>
+
+		            </ul>
+		            <div class="divider"></div>
+		            <!-- end aside buttons -->
+
+					<!-- aside buttons -->
+					<div class="aside-buttons">
+		                <a href="javascript:void(0)" title="" class="btn btn-primary">Tampil</a>
+		            </div>
 		            <div class="divider"></div>
 		            <!-- end aside buttons -->
 					
@@ -386,93 +376,94 @@
 							
 							<div class="row-fluid">
 								<article class="span12">
-									<!-- new widget -->
+								<!-- new widget -->
 									<div class="jarviswidget" id="widget-id-0" data-widget-deletebutton="false" data-widget-editbutton="false">
 									    <header>
-									        <h2>Tabel laporan penjualan</h2>                           
+									        <h2>Laporan Penjualan</h2>                           
 									    </header>
-									    <!-- wrap div -->
-									    <div>
-									        <div class="inner-spacer"> 
-												<table class="table table-striped table-bordered responsive" id="dtable">
+									    
+									    <!-- widget div-->
+									    <div>						                
+									        <div class="inner-spacer" > 
+									        <!-- content goes here -->	
+												<table class="table text-left" id="laporan">
 													<thead>
+														<tr style="background-color:white;background-image:none">
+															<th colspan="9" style="text-align:center;border:none;">
+																<a class="perusahaan">CV. Bandung Logistik</a></th></tr>
+														<tr style="background-color:white;background-image:none">
+															<th colspan="9" style="text-align:center;border:none;">
+																<a class="laporan">Laporan Penjualan Berdasar Invoice</a></th></tr>
+										        		<tr style="background-color:white;background-image:none">
+										        			<th colspan="9" style="text-align:center;border:none;">
+										        				<a class="periode">Periode 01 Juni 2013 s.d 31 Juni 2013</a></th></tr>
 														<tr>
-															<th style="width: 10px;">#</th>
-															<th>Kode</th>
-															<th>Barcode</th>
-															<th>Merek / Type</th>
+															<th>No. Bukti</th>
+															<th>Tanggal</th>
+															<th>Customer</th>
+															<th>Jatuh Tempo</th>
 															<th>Jml</th>
-															<th>Harga</th>
+															<th>Diskon</th>
 															<th>Pajak</th>
-															<th>Total</th>
-															<th>Profit</th>
-															<th>Pembayaran</th>
-															<th>Kasir</th>
+															<th>Total Tagihan</th>
+															<th>Telah Dibayar</th>
 														</tr>
 													</thead>
 													<tbody>
-														<tr class="odd gradeX">
-															<td>1</td>
-															<td>B0001</td>
-															<td>546445645643</td>
-															<td>Roti Coklat</td>
-															<td>2</td>
-															<td>1000</td>
-															<td>100</td>
-															<td>2200</td>
-															<td>600</td>
-															<td>Tunai</td>
-															<td>Yoso</td>
+														<tr >
+															<td>HD221WS</td>
+															<td>26 Jun 2012</td>
+															<td>CV. Bandung Pusat Logistik</td>
+															<td>26 Des 2012</td>
+															<td>500.000,00</td>
+															<td>0,00</td>
+															<td>0,00</td>
+															<td>500.000,00</td>
+															<td>200.000,00</td>
 														</tr>
-														<tr class="even gradeC">
-															<td>2</td>
-															<td>B0002</td>
-															<td>546445645643</td>
-															<td>Roti Coklat</td>
-															<td>2</td>
-															<td>1000</td>
-															<td>100</td>
-															<td>2200</td>
-															<td>600</td>
-															<td>Tunai</td>
-															<td>Yoso</td>
+														<tr>
+															<td>HD222WS</td>
+															<td>26 Jun 2012</td>
+															<td>CV. Bandung Pusat Logistik</td>
+															<td>26 Des 2012</td>
+															<td>500.000,00</td>
+															<td>0,00</td>
+															<td>0,00</td>
+															<td>500.000,00</td>
+															<td>200.000,00</td>
 														</tr>
-														<tr class="odd gradeA">
-															<td>3</td>
-															<td>B0003</td>
-															<td>546445645643</td>
-															<td>Roti Coklat</td>
-															<td>2</td>
-															<td>1000</td>
-															<td>100</td>
-															<td>2200</td>
-															<td>600</td>
-															<td>Tunai</td>
-															<td>Yoso</td>
+														<tr >
+															<td>HD223WS</td>
+															<td>26 Jun 2012</td>
+															<td>CV. Bandung Pusat Logistik</td>
+															<td>26 Des 2012</td>
+															<td>500.000,00</td>
+															<td>0,00</td>
+															<td>0,00</td>
+															<td>500.000,00</td>
+															<td>200.000,00</td>
 														</tr>
-														<tr class="even gradeA">
-															<td>4</td>
-															<td>B0004</td>
-															<td>546445645643</td>
-															<td>Roti Coklat</td>
-															<td>2</td>
-															<td>1000</td>
-															<td>100</td>
-															<td>2200</td>
-															<td>600</td>
-															<td>Tunai</td>
-															<td>Yoso</td>
+														<tr>
+															<td>HD224WS</td>
+															<td>26 Jun 2012</td>
+															<td>CV. Bandung Pusat Logistik</td>
+															<td>26 Des 2012</td>
+															<td>500.000,00</td>
+															<td>0,00</td>
+															<td>0,00</td>
+															<td>500.000,00</td>
+															<td>200.000,00</td>
 														</tr>
-														
 													</tbody>
 												</table>
-										        	
-										    </div>
-										    <!-- end content-->
+											
+											<!-- end content-->
+									        </div>
+									        
 									    </div>
-									    <!-- end wrap div -->
+									    <!-- end widget div -->
 									</div>
-									<!-- end widget -->
+								<!-- end widget -->
 								</article>
 							</div>
 							
@@ -487,86 +478,6 @@
 				<!-- aside right on high res -->
 				<aside class="right">
 					
-					<!-- sparkline stats -->
-					<ul class="mystats indented">
-		                <li class="first">
-		                    <h1><span>My Balance:</span>$17,349</h1>
-		                    <div class="mychart" id="balance" style="width:35px"></div>
-		                </li>
-		                <li>
-		                    <h1><span>Impressions:</span>145k+</h1>
-		                    <div class="mychart" id="clicks" style="width:35px"></div>
-		                </li>
-		                <li>
-		                    <h1><span>Subscribers:</span>1,120</h1>
-		                    <div class="mychart" id="subscribe" style="width:35px"></div>
-		                </li>
-		                <li class="last">
-		                    <h1><span>Support Ticket:</span>945+</h1>
-		                    <div class="mychart" id="support" style="width:35px"></div>
-		                </li>
-		            </ul>
-		            <div class="divider"></div>
-		            <!-- end sparkline stats -->
-					
-					<!-- aside item: Inbox -->
-					<!-- inbox message 1-->
-					<div class="mini-inbox">
-						<div class="alert inbox">
-							<button type="button" class="close" data-dismiss="alert">
-								×
-							</button>
-							
-							<a href="javascript:void(0)">
-								<img src="img/email-important.png" width="22" height="18" alt="important mail" />
-								From:David S...
-							</a>
-							Dear Victoria, Congratulations! You work has been uploade...
-						</div>
-						<!-- inbox message 2-->
-						<div class="alert inbox">
-							<button type="button" class="close" data-dismiss="alert">
-								×
-							</button>
-							<a href="javascript:void(0)">
-								<img src="img/email-unread.png" width="22" height="18" alt="important mail" />
-								Re:Last Year...
-							</a>
-							Hey Vicky, find attached! Thx :-)
-						</div>
-						<!-- inbox message 3-->
-						<div class="alert inbox last-child">
-							<button type="button" class="close" data-dismiss="alert">
-								×
-							</button>
-							<a href="javascript:void(0)">
-								<img src="img/email-unread.png" width="22" height="18" alt="important mail" />
-								Company Party
-							</a>
-							Hi, You have been cordially invited to join new year...
-						</div>
-						
-					</div>
-					<div class="divider"></div>
-					<!-- end aside item: Inbox -->
-					
-					<!-- aside item: Tiny Stats -->
-					<div class="number-stats">
-				    	<ul>
-				        	<li>4579<span>visitors</span></li>
-				            <li>571<span>orders</span></li>
-				            <li>879<span>reviews</span></li>
-				        </ul>
-				    </div>
-				    <div class="divider"></div>
-					<!-- end aside item: Tiny Stats -->
-					
-					<!-- aside buttons -->
-					<div class="aside-buttons">
-		                <a href="javascript:void(0)" title="" class="btn btn-primary">Create an Invoice</a>
-		            </div>
-		            <div class="divider"></div>
-		            <!-- end aside buttons -->
 		            
 				</aside>
 				
@@ -635,6 +546,39 @@
 
 	    	document.write('<script src="js/include/responsive-tables.min.js"><\/script>');
 	    }
+	</script>
+	<script type="text/javascript">
+		$(document).ready( function () {
+			$('#laporan').dataTable( {
+				"sDom": "<'row-fluid button_print'<'span12'T>>",
+				"oLanguage" : {
+				"sLengthMenu" : "Showing: _MENU_",
+				"sSearch": "" 
+				},
+				"oTableTools": {
+					"sSwfPath": "js/include/assets/DT/swf/copy_csv_xls_pdf.swf",
+					"aButtons": [
+						// print layout
+						{
+							"sExtends": "print",
+							"sButtonText": '<i class="cus-printer oTable-adjust"></i>'+" Print View"
+						},
+						//save as PDF
+						{
+							"sExtends": "pdf",
+							"sPdfOrientation": "landscape",
+							"sPdfMessage": "PT. 2 Serangkai", /* custom message here */
+							"sButtonText": '<i class="cus-doc-pdf oTable-adjust"></i>'+" Save to PDF"
+						},
+						//save for excel
+						{
+							"sExtends": "xls",
+							"sButtonText": '<i class="cus-doc-excel-table oTable-adjust"></i>'+" Save for Excel"
+						}
+					]
+				}
+			} );
+		} );
 	</script>
 
     <!-- REQUIRED: iButton -->

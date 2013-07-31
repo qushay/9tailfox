@@ -91,9 +91,9 @@
 		min-height: 100%;
 		color:#5F5F5F;
 	}
-	body {
+	/*body {
 		background: url('../img/backgrounds/mesh.png') #333;
-	}
+	}*/
 	
 	h1, h2, h3, h4, h5, h6, .my-profile span, .number-stats {
 		font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -256,8 +256,8 @@
 		height: 46px;
 		position:relative;
 		background: url('../img/transparant-30.png');
-		border-bottom: 1px solid #585858;
-		border-top: 5px solid #000;
+		/*border-bottom: 1px solid #585858;
+		border-top: 5px solid #000;*/
 		padding-right: 16px;
 	}
 
@@ -763,7 +763,7 @@
 		font-size: 12px;
 		color: #fff;
 		position: relative;
-		text-shadow: 0px 1px 0px #333;
+		/*text-shadow: 0px 1px 0px #333;*/
 	}
 	.my-profile-pic {
 		float: left;
@@ -803,7 +803,7 @@
 		font-weight: bold;
 		font-size: 18px;
 		border-left: 1px solid #5E5E5E;
-		text-shadow: 0px 1px 0px black;
+	/*	text-shadow: 0px 1px 0px black;*/
 		list-style: none;
 		display: inline-block;
 	}
@@ -848,11 +848,11 @@
 		-o-background-size: 100% 100%;
 		background-size: 100% 100%;
 		background: -webkit-gradient(linear, left top, left bottom, from(#AAD15F), to(#7EA437));
-		background: -webkit-linear-gradient(top, #AAD15F, #7EA437);
-		background: -moz-linear-gradient(top, #AAD15F, #7EA437);
-		background: -ms-linear-gradient(top, #AAD15F, #7EA437);
-		background: -o-linear-gradient(top, #AAD15F, #7EA437);
-		background: linear-gradient(top, #AAD15F, #7EA437);
+		background: -webkit-linear-gradient(top, #B49FAC, #B49FAC);
+		background: -moz-linear-gradient(top, #B49FAC, #B49FAC);
+		background: -ms-linear-gradient(top, #B49FAC, #B49FAC);
+		background: -o-linear-gradient(top, #B49FAC, #B49FAC);
+		background: linear-gradient(top, #B49FAC,#B49FAC);
 	}
 
 	
@@ -1014,8 +1014,8 @@
 	.mini-inbox div.alert.inbox {
 		border: 1px solid #494949;
 		background: url('../img/transparant-20.png');
-		color:#A8A8A8;
-		font-size: 11px;
+		color:#666;
+		font-size: 14px;
 		line-height: 17px;
 		position:relative;
 		overflow:hidden;
@@ -1042,14 +1042,14 @@
 	}
 	
 	.mini-inbox div.alert.inbox a {
-		color:#E4E4E4;
+		color:#3E3E3E;
 		margin:0;
 		font-size: 14px;
 		display:block;
 		line-height:20px;
 		margin-bottom:2px;
 		font-weight:normal;
-		text-shadow: 0px 1px 0px #131313;
+		/*text-shadow: 0px 1px 0px #131313;*/
 	}
 	.mini-inbox div.alert.inbox a img {
 		margin-top: -7px;
@@ -1057,7 +1057,7 @@
 	}	
 	
 	aside .alert {
-		text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+		/*text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);*/
 	}
 	
 	aside .alert .close {
@@ -2496,9 +2496,9 @@
 		-moz-border-radius: 3px;
 		background: #FFFCF2;
 		
-		box-shadow: 0 1px 0 white, 0 2px 1px 1px #F7F7F7;
-		-webkit-box-shadow: 0 1px 0 white, 0 2px 1px 1px #F7F7F7;
-		-moz-box-shadow: 0 1px 0 white, 0 2px 1px 1px #F7F7F7;
+		box-shadow: 0 1px 0 white, 0 2px 1px 1px #aaa;
+		-webkit-box-shadow: 0 1px 0 white, 0 2px 1px 1px #aaa;
+		-moz-box-shadow: 0 1px 0 white, 0 2px 1px 1px #aaa;
 	}
 	
 	p.message-box.you .message {
@@ -2761,7 +2761,7 @@
 	/* ---------------------------------------------------------------------- */
 	
 	#login-logo {
-		background:url('../img/favicons/apple-touch-icon-retina.png') top left transparent no-repeat;
+		background:url('../img/9tailcat_icon.png') top left transparent no-repeat;
 		display:block;
 		width:114px;
 		height:82px;

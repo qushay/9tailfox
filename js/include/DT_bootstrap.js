@@ -189,6 +189,44 @@ $(document).ready(function() {
 		
 		
 	}// end if
+	if ($('#dlaporan').length){
+		
+		$('#dlaporan').dataTable({
+			
+			// define table layout
+			"sDom" : "<'span12 hidden-phone'T>",
+			// add paging 
+			"oLanguage" : {
+				"sLengthMenu" : "Showing: _MENU_",
+				"sSearch": "" 
+			},
+			"oTableTools": {
+				"sSwfPath": "js/include/assets/DT/swf/copy_csv_xls_pdf.swf",
+				"aButtons": [
+					// print layout
+					{
+						"sExtends": "print",
+						"sButtonText": '<i class="cus-printer oTable-adjust"></i>'+" Print View"
+					},
+					//save as PDF
+					{
+						"sExtends": "pdf",
+						"sPdfOrientation": "landscape",
+						"sPdfMessage": "PT. 2 Serangkai", /* custom message here */
+						"sButtonText": '<i class="cus-doc-pdf oTable-adjust"></i>'+" Save to PDF"
+					},
+					//save for excel
+					{
+						"sExtends": "xls",
+						"sButtonText": '<i class="cus-doc-excel-table oTable-adjust"></i>'+" Save for Excel"
+					}
+				]
+			} // end oTableTools settings
+			
+		}); // end datatable formating
+		
+		
+	}// end if
 
 	$('.dataTables_filter input').attr("placeholder", "Search Filter");
 	
